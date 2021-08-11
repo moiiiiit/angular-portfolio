@@ -1,0 +1,54 @@
+.favicon {
+    max-height:100%;
+    width:auto;
+}
+nb-action {
+  height: auto;  
+  display: flex;
+  align-content: center;
+}
+.header-container {
+  display: flex;
+  align-items: right;
+  width: auto;
+  margin-right: -1rem;
+}
+
+nb-layout{
+  width:100%;
+}
+.control-item{
+  margin-left: auto;
+}
+.another-header{
+  margin-left: auto!important;
+}
+
+@media screen and (max-width: 600px){
+  .control-item {
+    display: none;
+  }
+  .stickey-footer{
+    display: block;
+  }
+  .user-action {
+    border: none;
+    padding: 0;
+  }
+}
+
+nb-layout-header{
+z-index: 100;
+}
+  ::ng-deep nb-action{
+    cursor: pointer;
+  }  
+  @media print {
+    nb-layout-header {
+      display: none !important;
+    }
+    ::ng-deep nb-card-header{
+      display: none;
+    }
+  
+  }
