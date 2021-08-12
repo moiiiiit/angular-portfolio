@@ -10,9 +10,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
-  declarations: [AppComponent, ResumeComponent, AboutComponent, HomeComponent, ProjectsComponent],
+  declarations: [AppComponent, ResumeComponent, AboutComponent, HomeComponent, ProjectsComponent, PhotosComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +26,7 @@ import { ProjectsComponent } from './projects/projects.component';
       { path: 'resume', component: ResumeComponent },
       { path: 'contact', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
+      { path: 'photos', component: PhotosComponent },
     ]),
     NbActionsModule,
     NbButtonModule,
