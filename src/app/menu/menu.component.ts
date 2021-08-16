@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { NbIconLibraries, NbMenuItem } from '@nebular/theme';
+import { NbComponentSize } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
+  theme = '';
+  size: NbComponentSize = 'medium';
   items: NbMenuItem[] = [
     {
       title: 'Menu',
@@ -14,29 +18,37 @@ export class MenuComponent implements OnInit {
         {
           title: 'Home',
           icon: 'home',
-          link: '/home'
+          link: '/home',
         },
         {
           title: 'Projects',
           icon: 'list',
-          link: '/projects'
+          link: '/projects',
         },
         {
           title: 'Resume',
           icon: 'file-text',
-          link: '/resume'
+          link: '/resume',
         },
         {
-          title:'Contact',
+          title: 'Contact',
           icon: 'person',
-          link: '/contact'
-        }
-      ]
-    }
+          link: '/contact',
+        },
+      ],
+    },
   ];
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private readonly themeService: NbThemeService) {
+    this.themeService.onThemeChange().subscribe((theme: any) => {
+      this.theme = theme.name;
+    });
   }
-
+  themeSwitch() {
+    if (this.theme == 'dark') {
+      this.themeService.changeTheme('default');
+    } else {
+      this.themeService.changeTheme('dark');
+    }
+  }
+  ngOnInit(): void {}
 }

@@ -5,14 +5,12 @@ import { NbThemeService } from '@nebular/theme';
 @Component({
   selector: 'app-actions',
   templateUrl: './actions.component.html',
-  styleUrls: ['./actions.component.scss']
+  styleUrls: ['./actions.component.scss'],
 })
 export class ActionsComponent implements OnInit {
   theme = '';
   size: NbComponentSize = 'medium';
-  constructor(
-    private readonly themeService: NbThemeService
-  ) {
+  constructor(private readonly themeService: NbThemeService) {
     this.themeService.onThemeChange().subscribe((theme: any) => {
       this.theme = theme.name;
     });
@@ -24,7 +22,5 @@ export class ActionsComponent implements OnInit {
       this.themeService.changeTheme('dark');
     }
   }
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
