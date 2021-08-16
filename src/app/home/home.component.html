@@ -1,11 +1,11 @@
 <div class='wrap horizontal space-between'>
     <div class="space-between">
         <div class="horizontal">
-            <p class="huge bold">Hello </p>
-            <img src="assets/requiredassets/hand.png" class='wave' />
+            <p class="huge bold" [style.font-size]="isMobile ? '3rem' : '5rem'">Hello </p>
+            <img [style.max-height]="isMobile ? '3rem' : '5rem'" src="assets/requiredassets/hand.png" class='wave' />
         </div>
         <p class="medium negativepadding alttextcolor">Welcome to my portfolio!</p>
-        <p class="giant end">{{userprofile.homehellointro}}</p>
+        <p  [style.font-size]="isMobile ? '2rem' : '3rem'" class="giant end">{{userprofile.homehellointro}}</p>
     </div>
     <img src="assets/images/{{userprofile.homeprofilepiclink}}" class='coder' />
 </div>
@@ -30,7 +30,7 @@
 </div>
 
 <div class="horizontal wrap verticalpadding">
-    <p class="huge bold">Experience </p>
+    <p class="huge bold" [style.font-size]="isMobile ? '3rem' : '5rem'">Experience </p>
 </div>
 <div class="bottompadding">
     <div class="experience-card" *ngFor="let exp of userprofile.experience">
@@ -38,7 +38,7 @@
             <nb-card-body>
                 <div class="horizontal space-between">
                     <p>{{exp.positiontitle}}</p>
-                    <p>{{exp.company}}</p>
+                    <p class="text-align-right">{{exp.company}}</p>
                 </div>
                 <p>{{exp.timeperiod}}</p>
                 <p>{{exp.bullet1}}</p>

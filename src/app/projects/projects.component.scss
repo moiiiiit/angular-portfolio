@@ -83,12 +83,19 @@
 .negativepadding {
   margin-top: -2rem;
 }
+.mediadivlandscape {
+  width: 100%;
+}
 .mediadiv {
   height: 480px;
 }
 .mediacomponent {
   height: 480px;
   width: auto;
+}
+.mediacomponentlandscape {
+  width: 100%;
+  height: auto;
 }
 .wave {
   max-height: 5rem;

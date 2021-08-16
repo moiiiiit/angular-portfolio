@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import * as data from 'src/assets/userprofile.json';
 import Typewriter from 't-writer.js';
+import { HostListener, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +11,32 @@ import Typewriter from 't-writer.js';
 export class HomeComponent implements OnInit {
   @ViewChild('tw') typewriterElement;
   @ViewChild('tw2') typewriterElement2;
-
+  aspectRatio = 16/9;
+  isMobile = false;
   userprofile = null;
   logos = []
-  constructor() {
+  constructor(private changeDetectorRef: ChangeDetectorRef) {
     this.userprofile = data;
     for(let i=1; i<=this.userprofile.numskilllogos; i++){
       this.logos.push("/assets/skilllogos/"+i.toString()+".png");
+    }
+    this.aspectRatio = window.innerHeight / window.innerWidth;
+    if (this.aspectRatio > 1.716) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    this.aspectRatio = window.innerHeight / window.innerWidth;
+    if (this.aspectRatio > 1.716) {
+      this.isMobile = true;
+      this.changeDetectorRef.detectChanges();
+    } else {
+      this.isMobile = false;
+      this.changeDetectorRef.detectChanges();
     }
   }
 

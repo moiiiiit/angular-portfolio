@@ -1,5 +1,5 @@
 <div class="nopadding width100 toppadding bottompadding">
-    <p class="huge bold">Let's talk!</p>
+    <p class="huge bold" [style.font-size]="isMobile ? '3rem' : '5rem'">Let's talk!</p>
     <p class="medium negativepadding alttextcolor">Drop me a message.</p>
 </div>
 <div class="horizontal center-children paddingbottom">
@@ -21,7 +21,7 @@
     <p class="alttextcolor huge toppadding">...</p>
 </div>
 
-<p class="huge bold verticalpadding">About me </p>
+<p class="huge bold verticalpadding" [style.font-size]="isMobile ? '3rem' : '5rem'">About me </p>
 
 <div class="horizontal wrap center-children profilepiccontainer">
     <img class="pic horizontalpadding" src='assets/images/profile.png' />

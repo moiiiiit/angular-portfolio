@@ -1,7 +1,7 @@
 <div class="wrap">
     <div class="horizontal">
-        <p class="bold huge">Projects</p>
-        <img src="assets/requiredassets/coder.png" class='wave' />
+        <p class="bold huge" [style.font-size]="isMobile ? '3rem' : '5rem'">Projects</p>
+        <img [style.max-height]="isMobile ? '3rem' : '5rem'" src="assets/requiredassets/coder.png" class='wave' />
     </div>
     <p class="medium negativepadding alttextcolor">{{userprofile.projectsintro}}</p>
 </div>
@@ -25,11 +25,12 @@
                         </div>
                     </div>
 
-                    <div *ngIf="hidemeimg[i]" class="mediadiv horizontal verticalpadding center-children">
+                    <div *ngIf="hidemeimg[i]" [ngClass]="this.userprofile.projects[i].mediaorientation == 'portrait' ? 'mediadiv' : 'mediadivlandscape'"
+                        class="horizontal verticalpadding center-children">
                         <div class=" center-children">
                             <p class="bold center">Demonstration</p>
                             <img src="assets/projects/{{this.userprofile.projects[i].imglink}}"
-                                class="mediacomponent" />
+                                [ngClass]="this.userprofile.projects[i].mediaorientation == 'portrait' ? 'mediacomponent' : 'mediacomponentlandscape'"/>
                         </div>
                     </div>
                 </div>
