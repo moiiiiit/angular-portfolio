@@ -73,7 +73,7 @@
     {
       "title": "My ReactJS Portfolio",
       "imglink": "React-Portfolio.png",
-      "description": "A little more quirky than this one, my React portfolio is hosted at - https://mohitbhole.com/alt-portfolio ."
+      "description": "A little more quirky than this one, my React portfolio is hosted - <a href=\"https://mohitbhole.com/alt-portfolio\">here</a> ."
     },
     {
       "title": "Machine Learning Control of Transistor Load-Pull Simulation",
