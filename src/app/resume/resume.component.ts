@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as data from 'src/assets/userprofile.json';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  userprofile = null;
+  resumeurl = "";
+    constructor() {
+    this.userprofile = data;
+    this.resumeurl = this.userprofile.resumeiframesrc;
   }
 
+  ngOnInit(): void {}
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from 'src/assets/userprofile.json';
 
 @Component({
   selector: 'app-about',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  userprofile = null;
+  constructor() {
+    this.userprofile = data;
+  }
 
   ngOnInit(): void {
   }

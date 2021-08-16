@@ -1,9 +1,9 @@
 .favicon {
-    max-height:100%;
-    width:auto;
+  max-height: 100%;
+  width: auto;
 }
 nb-action {
-  height: auto;  
+  height: auto;
   display: flex;
   align-content: center;
 }
@@ -11,44 +11,29 @@ nb-action {
   display: flex;
   align-items: right;
   width: auto;
+}
+nb-layout {
+  width: 100%;
+}
+.another-header {
+  display: flex;
+  align-self: right;
   margin-right: -1rem;
-}
-
-nb-layout{
-  width:100%;
-}
-.control-item{
   margin-left: auto;
 }
-.another-header{
-  margin-left: auto!important;
+
+.logo-container {
+  width: max-content;
 }
 
-@media screen and (max-width: 600px){
-  .control-item {
+::ng-deep nb-action {
+  cursor: pointer;
+}
+@media print {
+  nb-layout-header {
+    display: none !important;
+  }
+  ::ng-deep nb-card-header {
     display: none;
   }
-  .stickey-footer{
-    display: block;
-  }
-  .user-action {
-    border: none;
-    padding: 0;
-  }
 }
-
-nb-layout-header{
-z-index: 100;
-}
-  ::ng-deep nb-action{
-    cursor: pointer;
-  }  
-  @media print {
-    nb-layout-header {
-      display: none !important;
-    }
-    ::ng-deep nb-card-header{
-      display: none;
-    }
-  
-  }

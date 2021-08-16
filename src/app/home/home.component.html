@@ -1,1 +1,48 @@
-<h1>Home</h1>
+<div class='wrap horizontal space-between'>
+    <div class="space-between">
+        <div class="horizontal">
+            <p class="huge bold">Hello </p>
+            <img src="assets/requiredassets/hand.png" class='wave' />
+        </div>
+        <p class="medium negativepadding alttextcolor">Welcome to my portfolio!</p>
+        <p class="giant end">{{userprofile.homehellointro}}</p>
+    </div>
+    <img src="assets/images/{{userprofile.homeprofilepiclink}}" class='coder' />
+</div>
+
+<div class="bottompadding">
+
+    <div class="horizontal nopadding">
+        <span class="tw chonky" #tw> </span>
+        <span class="tw chonky" #tw2></span>
+    </div>
+    <p class='large nopadding homeintro lightweight alttextcolor'>{{userprofile.homeintro}}</p>
+</div>
+
+<div class="horizontal wrap toppadding center-children skill-logos">
+    <div class="" *ngFor="let image of this.logos">
+        <img class="skill-logo horizontalpadding" src='{{image}}' />
+    </div>
+</div>
+
+<div class="horizontal center-children">
+    <p class="alttextcolor huge nopadding">...</p>
+</div>
+
+<div class="horizontal wrap verticalpadding">
+    <p class="huge bold">Experience </p>
+</div>
+<div class="bottompadding">
+    <div class="experience-card" *ngFor="let exp of userprofile.experience">
+        <nb-card>
+            <nb-card-body>
+                <div class="horizontal space-between">
+                    <p>{{exp.positiontitle}}</p>
+                    <p>{{exp.company}}</p>
+                </div>
+                <p>{{exp.timeperiod}}</p>
+                <p>{{exp.bullet1}}</p>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

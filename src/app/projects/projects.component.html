@@ -1,1 +1,39 @@
-<p>projects works!</p>
+<div class="wrap">
+    <div class="horizontal">
+        <p class="bold huge">Projects</p>
+        <img src="assets/requiredassets/coder.png" class='wave' />
+    </div>
+    <p class="medium negativepadding alttextcolor">{{userprofile.projectsintro}}</p>
+</div>
+<div class="bottompadding toppaddingx2">
+    <div class="skill-logos" *ngFor="let project of userprofile.projects; index as i">
+        <nb-card>
+            <nb-card-body>
+                <div class="nopadding">
+                    <div class="horizontal nopadding space-between">
+                        <p class="bold">{{project.title}}</p>
+                        <p>{{project.company}}</p>
+                    </div>
+                    <p class="leftpadding">{{project.description}}</p>
+
+                    <div *ngIf="hideme[i]" class="mediadiv horizontal verticalpadding center-children">
+                        <div class=" center-children">
+                            <p class="bold center">Demonstration</p>
+                            <video autoplay [autoplay]="true" [muted]="true" muted loop
+                                src="assets/projects/{{this.userprofile.projects[i].medialink}}"
+                                class="mediacomponent"></video>
+                        </div>
+                    </div>
+
+                    <div *ngIf="hidemeimg[i]" class="mediadiv horizontal verticalpadding center-children">
+                        <div class=" center-children">
+                            <p class="bold center">Demonstration</p>
+                            <img src="assets/projects/{{this.userprofile.projects[i].imglink}}"
+                                class="mediacomponent" />
+                        </div>
+                    </div>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

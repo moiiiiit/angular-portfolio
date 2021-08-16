@@ -23,6 +23,8 @@
     "@nebular/theme": "^8.0.0",
     "eva-icons": "^1.1.2",
     "rxjs": "~6.6.0",
+    "safe-pipe": "^1.0.3",
+    "t-writer.js": "^1.0.4",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },

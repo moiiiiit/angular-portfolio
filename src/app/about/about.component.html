@@ -1,1 +1,41 @@
-<h1>About</h1>
+<div class="nopadding width100 toppadding bottompadding">
+    <p class="huge bold">Let's talk!</p>
+    <p class="medium negativepadding alttextcolor">Drop me a message.</p>
+</div>
+<div class="horizontal center-children paddingbottom">
+    <div class="nopadding center-children text-center">
+        <img class="chat horizontalpadding" src='assets/requiredassets/chat.jpg' />
+        <p class="large">Links to contact</p>
+        <div class="toppadding horizontal center-children">
+            <a class="rightpadding" href={{userprofile.contactlinkedinlink}}><img src="assets/requiredassets/linkedin.png"
+                    class="logolink" /></a>
+            <a class="rightpadding" href={{userprofile.contactemaillink}}><img src="assets/requiredassets/email.png" class="logolink" /></a>
+
+            <a href={{userprofile.contactgithublink}}><img src="assets/requiredassets/github.png"
+                    class="logolink" /></a>
+        </div>
+    </div>
+</div>
+
+<div class="horizontal center-children">
+    <p class="alttextcolor huge toppadding">...</p>
+</div>
+
+<p class="huge bold verticalpadding">About me </p>
+
+<div class="horizontal wrap center-children profilepiccontainer">
+    <img class="pic horizontalpadding" src='assets/images/profile.png' />
+</div>
+
+<div class="horizontal wrap center-children">
+    <p class="medium lightweight alttextcolor">Picture: {{userprofile.aboutprofilepicdesc}}</p>
+</div>
+<div class="verticalpadding">
+    <nb-card>
+        <nb-card-body class="center-children">
+            <p class="medium">{{userprofile.aboutnormal}}</p>
+            <p>{{userprofile.aboutlight}}</p>
+            <p>{{userprofile.aboutcasualnormal}}</p>
+        </nb-card-body>
+    </nb-card>
+</div>

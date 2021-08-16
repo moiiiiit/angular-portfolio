@@ -4,13 +4,13 @@ import {
   ViewChild,
   ViewContainerRef,
   ComponentFactoryResolver,
-  ComponentRef,
+  ElementRef,
   ComponentFactory,
 } from '@angular/core';
-import { NbThemeService } from '@nebular/theme';
-import { NbComponentSize } from '@nebular/theme';
 import { HostListener } from '@angular/core';
-import { NbIconLibraries } from '@nebular/theme';
+import { MenuComponent } from './menu/menu.component';
+import { ActionsComponent } from './actions/actions.component';
+import * as data from 'src/assets/userprofile.json';
 
 @Component({
   selector: 'app-root',
@@ -19,15 +19,24 @@ import { NbIconLibraries } from '@nebular/theme';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  size: NbComponentSize = 'medium';
+  userprofile = null;
+  componentRef = null;
+  componentRef2 = null;
   title = 'Mohit Bhole';
   theme = '';
   screenheight = 0;
   screenwidth = 0;
-  constructor(private readonly themeService: NbThemeService) {
-    this.themeService.onThemeChange().subscribe((theme: any) => {
-      this.theme = theme.name;
-    });
+
+  @ViewChild('menucontainer', { read: ViewContainerRef }) entry!: ViewContainerRef;
+  @ViewChild('actionscontainer', { read: ViewContainerRef }) entry2!: ViewContainerRef;
+  constructor(
+    private resolver: ComponentFactoryResolver
+  ) {
+    this.userprofile = data;
+  }
+
+  ngAfterViewInit() {
+    this.createActionComponent();
     this.onResize();
   }
 
@@ -35,14 +44,29 @@ export class AppComponent {
   onResize(event?) {
     this.screenheight = window.innerHeight;
     this.screenwidth = window.innerWidth;
-    //console.log(this.screenheight/this.screenwidth); //1.125
+    if (this.screenheight / this.screenwidth > 1.02) {
+      if (!this.componentRef) {
+        this.componentRef2.destroy();
+        this.componentRef2 = null;
+        this.createComponent();
+      }
+    } else {
+      if (this.componentRef) {
+        this.componentRef.destroy();
+        this.createActionComponent();
+        this.componentRef = null;
+      }
+    }
+    //console.log(this.screenheight/this.screenwidth); //1.02
   }
 
-  themeSwitch() {
-    if (this.theme == 'dark') {
-      this.themeService.changeTheme('default');
-    } else {
-      this.themeService.changeTheme('dark');
-    }
+  createComponent(): void {
+    const factory = this.resolver.resolveComponentFactory(MenuComponent);
+    this.componentRef = this.entry.createComponent(factory);
+  }
+
+  createActionComponent(): void {
+    const factory = this.resolver.resolveComponentFactory(ActionsComponent);
+    this.componentRef2 = this.entry2.createComponent(factory);
   }
 }
