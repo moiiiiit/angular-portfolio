@@ -1,4 +1,3 @@
-import { ImageComponentComponent } from './../image-component/image-component.component';
 import { Component, OnInit,
 } from '@angular/core';
 import * as data from 'src/assets/userprofile.json';

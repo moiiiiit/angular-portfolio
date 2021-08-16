@@ -73,7 +73,7 @@
     {
       "title": "My ReactJS Portfolio",
       "imglink": "React-Portfolio.png",
-      "description": "A little more quirky than this one, my React portfolio is hosted at - https://mohitbhole.com/react-portfolio ."
+      "description": "A little more quirky than this one, my React portfolio is hosted at - https://mohitbhole.com/alt-portfolio ."
     },
     {
       "title": "Machine Learning Control of Transistor Load-Pull Simulation",
@@ -102,6 +102,7 @@
   "contactemaillink": "mailto:mohitbhole@outlook.com",
   "contactgithublink": "https://www.github.com/moiiiiit",
   "contactlinkedin": "/mohitbhole",
+  "altportfoliolink": "https://mohitbholeportfolio.web.app/",
   "contactemail": "mohitbhole@outlook.com",
   "contactgithub": "/moiiiiit"
 }

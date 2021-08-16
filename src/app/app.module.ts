@@ -22,7 +22,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { MenuComponent } from './menu/menu.component';
 import { ActionsComponent } from './actions/actions.component';
 import { SafePipeModule } from 'safe-pipe';
-import { ImageComponentComponent } from './image-component/image-component.component';
+import { ReactportfolioComponent } from './reactportfolio/reactportfolio.component';
+import { LinkedinComponent } from './linkedin/linkedin.component';
+import { GithubComponent } from './github/github.component';
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ImageComponentComponent } from './image-component/image-component.compo
     ProjectsComponent,
     MenuComponent,
     ActionsComponent,
-    ImageComponentComponent,
+    ReactportfolioComponent,
+    LinkedinComponent,
+    GithubComponent,
+    EmailComponent,
   ],
   imports: [
     SafePipeModule,
@@ -49,6 +55,10 @@ import { ImageComponentComponent } from './image-component/image-component.compo
       { path: 'resume', component: ResumeComponent },
       { path: 'contact', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
+      { path: 'alt-portfolio', component: ReactportfolioComponent },
+      { path: 'github', component: GithubComponent },
+      { path: 'linkedin', component: LinkedinComponent },
+      { path: 'email', component: EmailComponent },
     ]),
     NbActionsModule,
     NbButtonModule,
