@@ -7,11 +7,20 @@
         <img class="chat horizontalpadding" src='assets/requiredassets/chat.jpg' />
         <p class="large">Links to contact</p>
         <div class="toppadding horizontal center-children">
-            <a class="rightpadding" href={{userprofile.contactlinkedinlink}}><img src="assets/requiredassets/linkedin.png"
+            <a [style.display]="userprofile.contactlinkedinlink ? 'initial' : 'none'" class="rightpadding"
+                href={{userprofile.contactlinkedinlink}}><img src="assets/requiredassets/linkedin.png"
                     class="logolink" /></a>
-            <a class="rightpadding" href={{userprofile.contactemaillink}}><img src="assets/requiredassets/email.png" class="logolink" /></a>
+            <a [style.display]="userprofile.contactemaillink ? 'initial' : 'none'" class="rightpadding"
+                href={{userprofile.contactemaillink}}><img src="assets/requiredassets/email.png" class="logolink" /></a>
 
-            <a href={{userprofile.contactgithublink}}><img src="assets/requiredassets/github.png"
+            <a [style.display]="userprofile.contactgithublink ? 'initial' : 'none'"  class="rightpadding"
+                href={{userprofile.contactgithublink}}><img src="assets/requiredassets/github.png"
+                    class="logolink" /></a>
+            <a [style.display]="userprofile.contactgithublink ? 'initial' : 'none'"  class="rightpadding"
+                href={{userprofile.contactinstagramlink}}><img src="assets/requiredassets/instagram.png"
+                    class="logolink" /></a>
+            <a [style.display]="userprofile.contactgithublink ? 'initial' : 'none'"
+                href={{userprofile.contactvscolink}}><img src="assets/requiredassets/vsco.png"
                     class="logolink" /></a>
         </div>
     </div>

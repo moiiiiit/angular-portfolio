@@ -97,8 +97,8 @@
   ],
   "resumeiframesrc": "https://onedrive.live.com/embed?cid=38128077D4A08E1D&resid=38128077D4A08E1D%211072&authkey=ACCnR7RrisBRyoQ&em=2",
   "resumeiframeresourceurl": "width=\"476\" height=\"288\" frameborder=\"0\" scrolling=\"no\"",
-  "photosinstagram": "moiiiiit",
-  "photosvsco": "moiiiiit",
+  "contactinstagramlink": "https://www.instagram.com/moiiiiit/",
+  "contactvscolink": "https://vsco.co/moiiiiit/gallery",
   "aboutnormal": "I am a Master's student studying Computer Science at the University of Texas at Dallas actively seeking full time jobs starting August 2022. I am an international student. My primary interests in the field of Computer Science are Machine Learning and Software Development. My passion for this has been very much aroused by hackathons and project experiences throughout college . I know JavaScript, Java, and Python and have a functional understanding of C#, HTML, Bash and GoLang. My technical and conceptual interests lie in web-development, app-development, and machine learning applications in everyday life.",
   "aboutlight": "My college GPA is 3.8/4.0 and my undergraduate GPA was 3.8/4.0 at the same university.",
   "aboutprofilepicdesc": "This is me in my graudation robe!",
@@ -106,8 +106,6 @@
   "contactlinkedinlink": "https://www.linkedin.com/in/mohitbhole/",
   "contactemaillink": "mailto:mohitbhole@outlook.com",
   "contactgithublink": "https://www.github.com/moiiiiit",
-  "contactlinkedin": "/mohitbhole",
   "altportfoliolink": "https://mohitbholeportfolio.web.app/",
-  "contactemail": "mohitbhole@outlook.com",
-  "contactgithub": "/moiiiiit"
+  "contactemail": "mohitbhole@outlook.com"
 }
