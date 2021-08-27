@@ -10,9 +10,11 @@ https://dev.to/happyharis/firebase-hosting-with-namecheap-domains-30gk
 ## Installation
 
 1. Clone this repository or Download and extract the zipped repo.
-2. Run 'npm install' in the terminal at the directory of the download.
-3. The project is ready to be run or customized.
-4. Try my (default) portfolio out by simply running 'ng serve --open' in the terminal.
+2. Install NodeJS - https://nodejs.org/en/download/
+3. Run 'npm install -g npm' in the terminal at the directory of the download.
+4. Run 'npm install' in the terminal at the directory of the download.
+5. The project is ready to be run or customized.
+6. Try my (default) portfolio out by simply running 'ng serve --open' in the terminal.
 
 ## Usage
 This portfolio relies on the "src/assets/" folders to make all the customizations (that I allow so that it can be modded).
