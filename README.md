@@ -11,6 +11,7 @@ https://dev.to/happyharis/firebase-hosting-with-namecheap-domains-30gk
 
 1. Clone this repository or Download and extract the zipped repo.
 2. Run 'npm install' in the terminal at the directory of the download.
+3. Sometimes 'ng update' and 'npm i --only=dev' might be required to correctly install all dependencies.
 3. The project is ready to be run or customized.
 4. Try my (default) portfolio out by simply running 'ng serve --open' in the terminal.
 
