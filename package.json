@@ -15,6 +15,7 @@
     "@angular/common": "~12.1.0",
     "@angular/compiler": "~12.1.0",
     "@angular/core": "~12.1.0",
+    "@angular/fire": "^7.0.4",
     "@angular/forms": "~12.1.0",
     "@angular/platform-browser": "~12.1.0",
     "@angular/platform-browser-dynamic": "~12.1.0",
@@ -22,11 +23,14 @@
     "@nebular/eva-icons": "8.0.0",
     "@nebular/theme": "^8.0.0",
     "eva-icons": "^1.1.2",
+    "http-server": "^13.0.2",
     "rxjs": "~6.6.0",
     "safe-pipe": "^1.0.3",
     "t-writer.js": "^1.0.4",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "firebase": "^9.0.0",
+    "rxfire": "^6.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.4",
@@ -41,6 +45,13 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.2"
+    "typescript": "~4.3.2",
+    "@angular-devkit/architect": "^0.1200.0",
+    "firebase-tools": "^9.0.0",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "open": "^7.0.3",
+    "jsonc-parser": "^3.0.0"
   }
 }

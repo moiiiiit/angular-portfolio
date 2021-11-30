@@ -19,7 +19,7 @@
       "title": "An Innovator_"
     }
   ],
-  "numskilllogos": 14,
+  "numskilllogos": 11,
   "experience": [
     {
       "positiontitle": "Software Developer Intern",
@@ -46,6 +46,13 @@
   "projectsheadline": "My Projects",
   "projectsintro": "Here are some of my solo and team programming projects",
   "projects": [
+    {
+      "title": "My Dog Ate my Dating Profile",
+      "medialink": "dog-demo.mp4",
+      "mediaorientation": "landscape",
+      "projecturl": "https://devpost.com/software/my-dog-ate-my-dating-profile",
+      "description": "An Angular-based web application and a Python-based webserver that together process a group of adjectives and an essay to produce an NRC emotional analysis, as well as a Big 5 personality analysis of Pet Profiles"
+    },
     {
       "title": "Sensory Cuff",
       "medialink": "Sensory Devices.mp4",
@@ -103,8 +110,8 @@
       "description": "Developed a Python based server-side code to run an API to train a neural network on multiple computers simultaneously."
     }
   ],
-  "resumeiframesrc": "https://onedrive.live.com/embed?cid=38128077D4A08E1D&resid=38128077D4A08E1D%211072&authkey=ACCnR7RrisBRyoQ&em=2",
-  "resumeiframeresourceurl": "width=\"476\" height=\"288\" frameborder=\"0\" scrolling=\"no\"",
+  "resumeiframesrc": "https://onedrive.live.com/embed?cid=38128077D4A08E1D&resid=38128077D4A08E1D%211076&authkey=AADxb6-kxmTZ4NM&em=2",
+  "resumedownloadsrc": "https://onedrive.live.com/download?cid=38128077D4A08E1D&resid=38128077D4A08E1D%211076&authkey=AADxb6-kxmTZ4NM&em=2",
   "contactinstagramlink": "https://www.instagram.com/moiiiiit/",
   "contactvscolink": "https://vsco.co/moiiiiit/gallery",
   "aboutnormal": "I am a Master's student studying Computer Science at the University of Texas at Dallas actively seeking full time jobs starting August 2022. I am an international student. My primary interests in the field of Computer Science are Machine Learning and Software Development. My passion for this has been very much aroused by hackathons and project experiences throughout college . I know JavaScript, Java, and Python and have a functional understanding of C#, HTML, Bash and GoLang. My technical and conceptual interests lie in web-development, app-development, and machine learning applications in everyday life.",

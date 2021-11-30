@@ -12,9 +12,11 @@ export class ResumeComponent implements OnInit {
   aspectRatio = 16 / 9;
   isMobile = false;
   resumeurl = '';
+  resumedownloadurl=''
   constructor(private changeDetectorRef: ChangeDetectorRef) {
     this.userprofile = data;
     this.resumeurl = this.userprofile.resumeiframesrc;
+    this.resumedownloadurl = this.userprofile.resumedownloadsrc
     this.aspectRatio = window.innerHeight / window.innerWidth;
     if (this.aspectRatio > 1.716) {
       this.isMobile = true;

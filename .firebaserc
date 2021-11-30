@@ -1,5 +1,11 @@
 {
-  "projects": {
-    "default": "mohitbholeangularportfolio"
+  "targets": {
+    "mohitbholeangularportfolio": {
+      "hosting": {
+        "angular-portfolio": [
+          "mohitbholeangularportfolio"
+        ]
+      }
+    }
   }
 }
