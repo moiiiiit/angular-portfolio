@@ -22,11 +22,18 @@
   "numskilllogos": 11,
   "experience": [
     {
-      "positiontitle": "Software Developer Intern",
+      "positiontitle": "Software Engineer Intern",
+      "company": "Spacee, Addison TX",
+      "timeperiod": "Jan 2022 - Present",
+      "bullet1": "• Design and develop full-stack software solutions for various Computer Vision and Robotics products.",
+      "bullet2": "• Work with JavaScript frameworks including Angular and tools like Docker and ElasticSearch."
+    },
+    {
+      "positiontitle": "Software Engineer Intern",
       "company": "Homecare Software Solutions, Frisco TX",
       "timeperiod": "May 2021 - Dec 2021",
-      "bullet1": "• Monitored server events, KAFKA processing lags and fixed/reprocessed issues in SQL server database to maintain server health.",
-      "bullet2": ""
+      "bullet1": "• Develop new features in .NET/SQL/KAFKA application as requested by clients and learned company database schemas and workings between tables to mitigate client issues in production environment.",
+      "bullet2": "• Monitored server events, KAFKA processing lags, and fixed/reprocessed issues in SQL server database to maintain server health"
     },
     {
       "positiontitle": "Computer Science Grader",
