@@ -164,15 +164,14 @@ Once This is done, make sure you have your website as you'd like. This can be do
 
 To Deploy - 
 
-1. You can use this tutorial - https://www.positronx.io/deploy-angular-8-app-to-firebase/
-2. Create a firebase account on https://firebase.google.com/
-3. Run the command - firebase login . Login with Google as instructed. If there are errors, run - npm install -g firebase-tools and try again.
-4. Run the command - firebase init .
-5. Select y to continue, select Create a New Project, then once prompted to select CLI features, press spacebar on 'Hosting: Configure and Deploy...', and click Enter.
-6. When it asks for public directory, enter - dist/angular-portfolio
-7. Run the command - ng build --aot
-8. Run the command - firebase deploy
-9. You'll be returned with the Hosting URL. Open this link to access your portfolio. You're done, congratulations.
+1. Create a firebase account on https://firebase.google.com/
+2. Run the command - firebase login . Login with Google as instructed. If there are errors, run - npm install -g firebase-tools and try again.
+3. Run the command - firebase init .
+4. Select y to continue, select Create a New Project, then once prompted to select CLI features, press spacebar on 'Hosting: Configure and Deploy...', and click Enter.
+5. When it asks for public directory, enter - dist/angular-portfolio
+6. Run the command - ng build --aot
+7. Run the command - firebase deploy
+8. You'll be returned with the Hosting URL. Open this link to access your portfolio. You're done, congratulations.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
