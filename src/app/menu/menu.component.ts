@@ -39,6 +39,7 @@ export class MenuComponent implements OnInit {
     },
   ];
   constructor(private readonly themeService: NbThemeService) {
+    this.themeService.changeTheme('default');
     this.themeService.onThemeChange().subscribe((theme: any) => {
       this.theme = theme.name;
     });

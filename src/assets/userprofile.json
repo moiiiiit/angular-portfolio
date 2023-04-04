@@ -19,14 +19,24 @@
       "title": "An Innovator_"
     }
   ],
-  "numskilllogos": 11,
+  "numskilllogos": 12,
   "experience": [
+    {
+      "positiontitle": "Full-stack Software Engineer",
+      "company": "Spacee, Addison TX",
+      "timeperiod": "Aug 2022 - Present",
+      "bullet1": "• Develop Angular/NestJS/Kafka/Docker/Kubernetes applications and features to support a wide range of robotics hardware",
+      "bullet2": "• Implement event logging and device telemetry using a tech-stack powered by Kafka, Mosquitto, and Elasticsearch ",
+      "bullet3": "• Identify needs for alerts and daily automation and set-up watchers in Elasticsearch and a Daily Metrics application for summarizing issues and logging them to Slack, saving the operations team 5 hours per week",
+      "bullet4": "• Initiate a new project to refactor code and reduce replication, resulting in creation of a Spacee-theme standard UI library that cuts development time in half and is used in all frontend applications",
+      "bullet5": "• Recognize inefficiency in legacy applications and owned transfer of key features into new applications, entirely eliminating need for legacy support while retaining and improving core functionality of previous software"
+    },
     {
       "positiontitle": "Software Engineer Intern",
       "company": "Spacee, Addison TX",
-      "timeperiod": "Jan 2022 - Present",
-      "bullet1": "• Design and develop full-stack software solutions for various Computer Vision and Robotics products.",
-      "bullet2": "• Work with JavaScript frameworks including Angular and tools like Docker and ElasticSearch."
+      "timeperiod": "Jan 2022 - Aug 2022",
+      "bullet1": "• Develop full-stack software features for various Computer Vision and Robotics products.",
+      "bullet2": "• Work extensively with Elasticsearch (Kibana) and Kibana Watchers. Create Angular + Python apps for more complex alerts and for Visualizing data."
     },
     {
       "positiontitle": "Software Engineer Intern",
